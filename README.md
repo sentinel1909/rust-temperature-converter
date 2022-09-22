@@ -4,7 +4,7 @@ This is a simple Rust program which uses the clap crate to receive a temperature
 
 The input temperature must be a floating point number, i.e. 25.0.
 
-In this iteration of the program, negative temperature values are not accepted.
+You can enter negative temperature values, i.e. -25.0.
 
 ## Usage
 

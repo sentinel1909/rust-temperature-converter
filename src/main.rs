@@ -4,7 +4,11 @@ use clap::Parser;
 struct Temperature(f32);
 
 #[derive(Parser, Debug)]
-#[clap(author, version, about, long_about = None)]
+#[clap(name = "Rust Temperature Converter")]
+#[clap(author = "Jeff Mitchell <sentinel1909@protonmail.com>")]
+#[clap(version = "0.1.0")]
+#[clap(about = "Converts a Celsius temperature into Fahrenheit and Kelvin", long_about = None)]
+#[clap(allow_negative_numbers = true)]
 struct Args {
     #[clap(short, long, value_parser)]
     temp: f32
